@@ -124,7 +124,7 @@ sco · hci_uart · l2cap · bluetooth · bcm4750_spi · vfat · msdos
 fat · evdev
 ```
 
-> ⚠️ Le module **`signedloop`** est rapporté par la communauté ([gpspower.net](https://www.gpspower.net/tomtom-tutorials/330988-tomtom-carminat-live-uart.html)) comme vérifiant l'intégrité de `rootfs.img`. **Non observé dans le rootfs extrait** (ni dans `/etc/modules`, ni dans `/lib/modules/2.6.28.10-tt1574740/`). À confirmer empiriquement.
+> ⚠️ Le module **`signedloop`** est rapporté par la communauté ([gpspower.net](https://www.gpspower.net/tomtom-tutorials/330988-tomtom-carminat-live-uart.html)) comme vérifiant l'intégrité de `rootfs.img`. **Non observé dans le rootfs extrait** (ni dans `/etc/modules`, ni dans `/lib/modules/2.6.28.10-tt1574740/`). À confirmer.
 
 ---
 
@@ -531,11 +531,11 @@ Si `/mnt/sdcard/gprscomd.cmdline` est exécutable et que sa dernière ligne poin
 Remplacer `/splashw.bmp` à la racine FAT32 de la SD :
 - Format présent dans la SD : **BMP Windows 3.x · 480×272 · 24 bits**
 - Emplacement utilisé par le système (selon analyse du firmware)
-- Non testé empiriquement
+- Non testé
 
 #### 2. Menu UI custom via `SdkRegistry`
 
-Créer `SdkRegistry/tomtom.mnu` à la racine de la SD. La feature `SDK` apparaît dans le champ `Features=` du `ttgo.bif` extrait. Son activation runtime sur le boîtier reste à confirmer empiriquement.
+Créer `SdkRegistry/tomtom.mnu` à la racine de la SD. La feature `SDK` apparaît dans le champ `Features=` du `ttgo.bif` extrait. Son activation runtime sur le boîtier reste à confirmer.
 
 ```
 BLOCK_MAIN
